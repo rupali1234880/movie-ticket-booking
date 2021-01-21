@@ -91,7 +91,7 @@ console.log("movies",movies)
     return (
         <div>
             <div>
-                <h1>WOOKIE<br></br> MOVIES</h1>
+                <h2>WOOKIE<br></br> MOVIES</h2>
                 <div className="searchbox">
                     <input type="text" onChange={handleChange}></input>
                      <button onClick={handleSubmit}>Search</button> 
@@ -112,12 +112,12 @@ console.log("movies",movies)
               >
                
                   <DialogContent >
-                  <div className="col-sm-12">
-                    <div className="col-sm-4">
+                  <div className="col-sm-12" >
+                    <div className="col-sm-4" style={{float : "left"}}>
     
                     <img src={MovieDetails.poster} alt='chinut' />
                     </div>
-                    <div className="col-sm-8"  >
+                    <div className="col-sm-8" style={{float :"left"}} >
     <h3>{MovieDetails.title}</h3>
          <p>{MovieDetails.overview}</p>
     </div>
